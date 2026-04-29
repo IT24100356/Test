@@ -14,6 +14,7 @@ function ItemCard({ item, onDelete }) {
       <p>{item.description}</p>
       <p><strong>Barcode: </strong>{item.barcode}</p>
       <p><strong>Date: </strong>{item.date ? new Date(item.date).toLocaleDateString() : "N/A"}</p>
+      <p><strong>Time:</strong> {item.time || "N/A"}</p>
 
       <div className="card-actions">
         <Link className="btn secondary" to={`/edit-item/${item._id}`}>Edit</Link>

@@ -24,3 +24,4 @@ git
         git push origin main
 
         git reset --soft HEAD~1
+        MONGO_URI=mongodb+srv://Poornaaaa:Poorna1234@cluster0.azgdwpm.mongodb.net/testdb?appName=Cluster0

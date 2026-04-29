@@ -8,6 +8,9 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       price: "",
       description: "",
       imageUrl: "",
+      date: "",
+      barcode: "",
+      time: "",
     }
   );
 
@@ -60,11 +63,20 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       />
       <label>Date</label>
       <input
-  type="date"
-  name="date"
-  value={formData.date}
-  onChange={handleChange}
-  required
+        type="date"
+        name="date"
+        value={formData.date}
+        onChange={handleChange}
+        required
+      />
+
+      <label>Time</label>
+      <input
+        type="time"
+        name="time"
+        value={formData.time}
+        onChange={handleChange}
+        required
 />
       
 

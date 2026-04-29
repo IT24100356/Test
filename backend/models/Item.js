@@ -35,7 +35,11 @@ const itemSchema = new mongoose.Schema(
     date: {
       type: Date,
       required: [true, "Date is required"],
-    }
+    },
+    time: {
+  type: String,
+  required: [true, "Time is required"],
+},
   },
   { timestamps: true }
 );

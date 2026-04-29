@@ -12,11 +12,12 @@ function EditItemPage() {
     const fetchItem = async () => {
       try {
         const { data } = await getItemById(id);
-        setItem(data);
-        setItem({ //updated from here
-      ...data,
-      date: data.date ? data.date.split("T")[0] : "",
-    }); //to here
+        setItem(data); //from here
+        setItem({
+  ...data,
+  date: data.date ? data.date.split("T")[0] : "",
+  time: data.time || "",
+}); //to here
       } catch (error) {
         console.error("Failed to fetch item", error);
       }
