@@ -1,0 +1,26 @@
+create repo
+add environment 
+add gitignore
+Build command
+npm run build
+Publish directory
+frontend/dist
+
+Deployment Notes:
+
+        Backend: Deployed as a Web Service on Render using the npm install build command. Environment variables (MONGO_URI and PORT) were configured in the Render dashboard.
+
+        Frontend: Deployed on Netlify using the npm run build command, with the publish directory set to dist.
+
+        Integration: The frontend communicates with the live backend using an environment variable (VITE_API_URL) configured in Netlify to point to the Render backend URL.
+
+git
+        git init
+
+        git add .
+
+        git commit -m "Initial commit for lab test"
+
+        git push origin main
+
+        git reset --soft HEAD~1
