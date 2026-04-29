@@ -25,3 +25,7 @@ git
 
         git reset --soft HEAD~1
         MONGO_URI=mongodb+srv://Poornaaaa:Poorna1234@cluster0.azgdwpm.mongodb.net/testdb?appName=Cluster0
+
+first
+git config --global user.name "Poorna Rajapakshe"
+git config --global user.email "your.github.email@example.com"
